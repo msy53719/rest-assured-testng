@@ -5,7 +5,6 @@ import java.sql.SQLException;
 import javax.sql.DataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import com.mosy.core.constant.DBConstant;
 import com.mysql.cj.jdbc.MysqlDataSource;
 
@@ -20,7 +19,6 @@ public class DbConnectionUtil {
 		datasource.setPort(DBConstant.JDBC_PORT);
 		datasource.setPassword(DBConstant.JDBC_PWD);
 		datasource.setUser(DBConstant.JDBC_USER);
-
 		return datasource;
 	}
 
