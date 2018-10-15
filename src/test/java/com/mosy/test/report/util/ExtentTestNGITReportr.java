@@ -123,8 +123,10 @@ public class ExtentTestNGITReportr implements IReporter {
 		CopyFileUtil.copyResources(REPORT_DIR);
 		logger.debug(FILE_NAME);
 		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(REPORT_DIR + FILE_NAME);
-		htmlReporter.config().setDocumentTitle("TestReport");
-		htmlReporter.config().setReportName("TestReport");
+		//htmlReporter.config().setDocumentTitle("TestReport");
+		//htmlReporter.config().setReportName("TestReport");
+		htmlReporter.config().setDocumentTitle("测试报告");
+		htmlReporter.config().setReportName("测试报告");
 		htmlReporter.config().setChartVisibilityOnOpen(true);
 		htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
 		htmlReporter.config().setTheme(Theme.DARK);
