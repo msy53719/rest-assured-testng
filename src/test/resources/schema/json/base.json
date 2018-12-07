@@ -1,0 +1,24 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "返回数据格式",
+	"type": "object",
+	"properties": {
+		"code": {
+			"description": "返回code",
+			"type": "string"
+		},
+		"message": {
+			"description": "返回msg",
+			"type": "string"
+		},
+		"data": {
+			"description": "数据对象",
+			"type": "null"
+		}
+	},
+	"required": [
+		"code",
+		"message",
+		"data"
+	]
+}
