@@ -8,7 +8,6 @@ import com.alibaba.fastjson.JSONObject;
 import static org.junit.Assert.assertThat;
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
-
 import io.restassured.response.Response;
 import lombok.extern.slf4j.Slf4j;
 
@@ -20,7 +19,6 @@ public class HttpInterfaceTest {
 	private final static String postPath = "/addFood";
 	private Response response = null;
 
-	// RequestSpecification=null;
 	@Test
 	public void PostTest() {
 		RequestSpecification request = given().header("Content-Type", "application/json").body(MapToJson());
@@ -35,7 +33,6 @@ public class HttpInterfaceTest {
 		RequestSpecification request = given();// header("Content-Type", "application/json");
 		response = request.get(url + getPath);
 		log.debug("get返回", response.getBody().prettyPrint());
-		log.debug("dfs", "2222");
 	}
 
 	public static JSONObject MapToJson() {
